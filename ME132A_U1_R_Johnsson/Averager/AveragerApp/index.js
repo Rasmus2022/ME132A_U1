@@ -16,6 +16,7 @@
 
 // FUNCTION DECLARATIONS (in alphabetical order)
 
+
   function adder ( _array ) {
     let sum = 0;
     for (let i = 0; i < _array.length; i++) { 
@@ -24,9 +25,11 @@
     return sum;
   }
 
+
   function averg (_array) {
     return adder(_array) / _array.length;
   }
+
 
   function createNumberDiv (gridContainer) {
   
@@ -59,6 +62,7 @@
   
   }
 
+
   function gridMaker (gridContainer, R, C) {
  
     gridContainer.style.gridTemplateRows = `repeat(${R}, 1fr)`;
@@ -77,6 +81,7 @@
     }
   }
 
+
   function randomNumber (max) {
     return Math.floor(max * Math.random());
   }
@@ -86,6 +91,7 @@
       var rounded = Math.pow(10, decimals);
       return (Math.round(numberWithManyDecimals * rounded) / rounded).toFixed(decimals);
   }
+
 
   function updateResults (className) {
   
@@ -102,6 +108,7 @@
   
   }
   
+
   document.querySelector("button").addEventListener("click", function () {
 
     let elementReferens = document.querySelector("#grid");
@@ -111,6 +118,7 @@
   
   });
 
+  
   gridMaker(
     document.querySelector('#grid'),
     document.querySelector('#inputRows').value,

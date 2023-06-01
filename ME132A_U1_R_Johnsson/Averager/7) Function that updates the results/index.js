@@ -187,5 +187,5 @@ function roundString(numberWithManyDecimals, decimals){
   return (Math.round(numberWithManyDecimals * rounded) / rounded).toFixed(decimals);
 }
 
-console.log( [1,3,4,10,0,1].join() );
-console.log( [1,3,4,10,0,1].join(" - ") );
+//console.log( [1,3,4,10,0,1].join() );
+//console.log( [1,3,4,10,0,1].join(" - ") );
